@@ -47,7 +47,7 @@ For banner over lay add this class to your div
 
 }
 
-.banner_container button{
+button{
   background-color: rgb(243, 38, 38); 
   border: none;
   color: white;
@@ -56,6 +56,8 @@ For banner over lay add this class to your div
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 4px;
+  font-family: 'Nunito', Arial, sans-serif;
 }
 
 
@@ -83,13 +85,20 @@ For banner over lay add this class to your div
   padding-right: 10px;
 }
 
-.header nav a{
+/* .header nav a{
   
   text-size-adjust: 20px;
   color: black;
   margin-right: 10px;
   padding-right: 10px;
   text-decoration: solid;
+} */
+.header nav a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .container{
@@ -99,31 +108,112 @@ For banner over lay add this class to your div
   
 }
 
-.grid-container {
-  display: grid;
+.container1 {
+  /* display: grid;
   justify-content: space-evenly;
   gap: 50px 15px;
   grid-template-columns: repeat(2, 1fr);
   background-color: rgb(158, 157, 157);
-  padding: 20px;
+  padding: 20px; */
+  padding:10px;
+  background-color: rgb(236, 230, 230);
 
 }
+.grid1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:1px 50px;
+}
+
+
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid grey;
-  padding: 10px;
-  font-size: 15px;
-  text-align: left;
-  margin:10px;
+ 
+  background-color: white;
+  flex-direction: row;
  
 }
+.grid-item h3{
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(219, 213, 210);
+}
+
+img{
+  height: 30px;
+}
+
 
 .margin-y{
   margin: 10px 0;
   background-color: white;
   padding: 0;
+  
 }
 .circle{
   border-radius: 50%;
   margin-right: 10px;
+}
+.text{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  width:30%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.pb-20{
+  padding-bottom: 20px;
+}
+
+.walk_through{
+  grid-template-columns: repeat(3, 1fr);
+
+}
+.walk_through .item{
+  text-align: center;
+  margin-right:20px;
+  box-shadow: rgb(209 209 213) 0px 5px 15px;
+  padding: 10px;
+ 
+}
+ 
+.pic1{
+ background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg") ;
+ height:199px;
+ width: 250px;
+ text-align: center;
+ 
+}
+
+.pic2{
+  background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg") ;
+  height:199px;
+  width: 250px;
+  text-align: center;
+}
+
+.pic3{
+  background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg") ;
+  height:199px;
+  width: 250px;
+  text-align: center;
+}
+
+.container2{
+  padding:10px;
+  background-color: white;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap:1px 50px;
+}
+
+.item-3{
+  background-color: white;
+  flex-direction: row;
+  
 }
