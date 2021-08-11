@@ -1,6 +1,7 @@
 body {
   font-family: 'Nunito', Arial, sans-serif;
   font-size: 12px;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,24 +27,37 @@ For banner over lay add this class to your div
 </div>
 */
 .banner_container {
-  position: relative;
-  background-image: url("http:placehold.it");
-  background-size: cover;
+  position: relative; 
   height: 400px;
   padding:50px 0;
-  align-items: center;
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg');
+  background-size: cover;
+}
+.banner_container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.4);
+
 }
 
-.banner_container:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.4);
-  content: "";
-
+.banner_container button{
+  background-color: rgb(243, 38, 38); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
+
 
 /* .banner_container h3{
   text-align: center;
@@ -65,16 +79,51 @@ For banner over lay add this class to your div
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header nav a{
-  text-decoration: none;
-  text-size-adjust: 10px;
+  
+  text-size-adjust: 20px;
   color: black;
   margin-right: 10px;
+  padding-right: 10px;
+  text-decoration: solid;
 }
+
 .container{
   width: 100%;
   margin-left: auto;
   margin-right:auto;
+  
+}
+
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  gap: 50px 15px;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(158, 157, 157);
+  padding: 20px;
+
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid grey;
+  padding: 10px;
+  font-size: 15px;
+  text-align: left;
+  margin:10px;
+ 
+}
+
+.margin-y{
+  margin: 10px 0;
+  background-color: white;
+  padding: 0;
+}
+.circle{
+  border-radius: 50%;
+  margin-right: 10px;
 }
