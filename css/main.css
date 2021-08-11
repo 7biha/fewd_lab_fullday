@@ -179,6 +179,7 @@ img{
  
 }
  
+
 .pic1{
  background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg") ;
  height:199px;
@@ -216,4 +217,23 @@ img{
   background-color: white;
   flex-direction: row;
   
+}
+
+.buttonlast{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  align-items: center;
+  width:20%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  text-align: center;
 }
