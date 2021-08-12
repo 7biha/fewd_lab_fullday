@@ -26,53 +26,78 @@ For banner over lay add this class to your div
   </div>
 </div>
 */
-.banner_container {
+.banner{
   position: relative; 
   height: 400px;
-  padding:50px 0;
+  padding: 50px 0;
   text-align: center;
   /* align-items: center; */
   justify-content: center;
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg');
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg');
   background-size: cover;
+ 
 }
-.banner_container::before {
+.banner::before {
     content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.4);
+    
 
 }
 
+.banner > .container{
+  display: flex;   
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  margin-bottom: 0;
+}
 .header a{
   font-size: 15px;
 } 
-.banner_container h3{
+
+/* @media (max-width: 500px){
+  header #bars{
+      display: block;
+  }
+  header nav{
+      display:none;
+  }
+} */
+
+/* @media  (max-width: 320px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+} */
+.banner h3{
   color:white;
   font-size: 20px;
   text-align: center;
   margin: 0px;
-  filter: brightness(90%);
+  filter: brightness(100%);
 }
-.banner_container p{
+.banner p{
   color:white;
   font-size: 13px;
   text-align: center;
   margin: 0px;
-  filter: brightness(90%);
+  filter: brightness(100%);
 }
-.banner_container h1{
+.banner h1{
   color:white;
   font-size: 50px;
   text-align: center;
   margin: 0px;
-  filter: brightness(90%);
+  filter: brightness(100%);
 }
 
-button{
+/* button{
   background-color: rgb(243, 38, 38); 
   border: none;
   color: white;
@@ -83,12 +108,32 @@ button{
   font-size: 16px;
   border-radius: 4px;
   font-family: 'Nunito', Arial, sans-serif;
+} */
+button {
+  background-color: rgb(237, 108, 104);
+  color: white;
+  padding: 20px 40px;
+  border: 1px solid red;
+  cursor: pointer;
+  width: 300px;
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 20px;
+  box-shadow: 1px 3px red;
+  border-radius: 5px;
+  border: rgb(237, 108, 104);
 }
 
+button:hover {
+  background-color: rgb(184, 38, 57);
+}
 
-/* .banner_container h3{
-  text-align: center;
-} */
+.text1{
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.text1 p{
+  font-size: 20px;
+}
 .flex{
   display:flex;
   /* flex-wrap: wrap; */
@@ -110,14 +155,6 @@ button{
   padding-right: 10px;
 }
 
-/* .header nav a{
-  
-  text-size-adjust: 20px;
-  color: black;
-  margin-right: 10px;
-  padding-right: 10px;
-  text-decoration: solid;
-} */
 .header nav a{
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -130,13 +167,12 @@ button{
   width: 100%;
   margin-left: auto;
   margin-right:auto;
-  
 }
 .container3{
   background-color: rgb(226, 226, 226);
   border: 1px solid rgb(143, 143, 143);
-
   box-shadow: 0 3px 10px rgb(181, 181, 181);
+  height: 50px;
 }
 
 .container1 {
@@ -160,6 +196,7 @@ button{
 .grid2{
   display: grid;
   gap: 50px 15px;
+
 }
 
 
